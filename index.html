@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+</head>
+
+<body class="m-0">
+    <main>
+        <section class="py-4">
+            <h1 class="text-center mb-5 text-muted">Movies catalog</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <form class="mb-4" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                            <input type="text" class="form-control mb-2" placeholder="Search" name="search">
+                            <input type="number" class="form-control mb-2" placeholder="Rating" name="reating" min="1"
+                                max="10">
+                            <select class="form-select mb-2" aria-label="Default select example" name="select-1">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">All</option>
+                            </select>
+                            <select class="form-select mb-2" aria-label="Default select example" name="select-2">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">All</option>
+                            </select>
+                            <button class="btn btn-primary w-100" type="submit">Button</button>
+                        </form>
+                        <div>
+                            <h2>Bookmarked movies</h2>
+                            <div class="card">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <h3 class="h6">Avengers: Infinity War</h3>
+                                        <a class="btn btn-danger" href="#" role="button">Remove</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h3 class="h6">The Avengers</h3>
+                                        <a class="btn btn-danger" href="#" role="button">Remove</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h3 class="h6">12 Slaves :)</h3>
+                                        <a class="btn btn-danger" href="#" role="button">Remove</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <strong class="d-block h5 mb-2">Search rusult:39</strong>
+                        <div class="alert alert-info mb-4" role="alert">
+                            A simple primary alert—check it out!
+                        </div>
+                        <div class="row mb-4">
+                            <div class="card col-6">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://stereo-news.com/wp-content/uploads/2020/12/mstiteli-final-2019-smotret-onlajn.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://images.thedirect.com/media/article_full/avengers-5-captain-america.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://images.thedirect.com/media/article_full/avengers-5-characters-shang-chi_1.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Avengers: Infinity War</h5>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                                        </svg>
+                                        <p class="ms-2 mb-0">2018</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <p class="ms-2 mb-0">8.7</p>
+                                    </div>
+                                    <a class="btn btn-outline-primary" href="#" role="button">Watch trailer</a>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">
+                                        More info
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Avengers: Infinity War</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    «Мсти́тели: Фина́л» (англ. Avengers: Endgame) — американский супергеройский фильм 2019 года, основанный на комиксах Marvel о приключениях команды супергероев Мстителей, созданный студией Marvel Studios и распространяемый компанией Walt Disney Studios Motion Pictures. Прямое продолжение событий ленты «Мстители: Война бесконечности» (2018), 22-й по счёту фильм медифраншизы «Кинематографическая вселенная Marvel» (КВМ), предпоследний в Третьей фазе и Саге Бесконечности. Режиссёрами картины выступили братья Энтони и Джо Руссо, а сценаристами — Кристофер Маркус и Стивен Макфили. Главные роли исполнили Роберт Дауни-младший, Крис Эванс, Марк Руффало, Крис Хемсворт, Скарлетт Йоханссон, Джереми Реннер, Дон Чидл, Пол Радд, Бри Ларсон, Карен Гиллан, Данай Гурира, Бенедикт Вонг, Джон Фавро, Брэдли Купер, Гвинет Пэлтроу и Джош Бролин. По сюжету фильма выжившие члены Мстителей и их союзники пытаются обратить вспять разрушения, причинённые Таносом (Бролин) в «Войне бесконечности».
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-outline-success" href="#" role="button">BookMark</a>
+
+                                </div>
+                            </div>
+
+                            <div class="card col-6">
+                                <div id="control" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtiAWmAArWXtkc9ujs254AivkRdBItEtd6T4ZXJurpNwNxOtlUcZQ9QHyaFL-oqcqJljw&usqp=CAU"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://www.gamersdecide.com/sites/default/files/avengers_title_hero_art_1920x1080.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://www.slashfilm.com/img/gallery/tales-from-the-box-office-10-years-ago-the-avengers-redefined-blockbuster-filmmaking/l-intro-1651951472.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#control"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#control"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">The Avengers</h5>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                                        </svg>
+                                        <p class="ms-2 mb-0">2012</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <p class="ms-2 mb-0">8.1</p>
+                                    </div>
+                                    <a class="btn btn-outline-primary" href="#" role="button">Watch trailer</a>
+
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2">
+                                        More info
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">The Avengers</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Marvel's The Avengers[4] (classified under the name Marvel Avengers Assemble in the United Kingdom and Ireland),[1][5] or simply The Avengers, is a 2012 American superhero film based on the Marvel Comics superhero team of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures,[N 1] it is the sixth film in the Marvel Cinematic Universe (MCU). Written and directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers, alongside Tom Hiddleston, Clark Gregg, Cobie Smulders, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury and the spy agency S.H.I.E.L.D. recruit Tony Stark, Steve Rogers, Bruce Banner, Thor, Natasha Romanoff, and Clint Barton to form a team capable of stopping Thor's brother Loki from subjugating Earth.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-outline-success" href="#" role="button">BookMark</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 d-block mx-auto">
+                            <nav>
+                                <ul class="pagination pagination-md">
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
